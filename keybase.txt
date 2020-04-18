@@ -1,0 +1,53 @@
+https://keybase.io/jgcrossman2
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://johngcrossman.com
+  * I am jgcrossman2 (https://keybase.io/jgcrossman2) on keybase.
+  * I have a public key ASANkpNSR8MnmuiC1bRTIOZv8nVcV2wNSo9mO1VdYGbVsQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101cd28c10c7d13569393b5376d7d6c8808062e7e5d92baf0aa61f121d7d989b0de0a",
+      "host": "keybase.io",
+      "kid": "01200d92935247c3279ae882d5b45320e66ff2755c576c0d4a8f663b555d6066d5b10a",
+      "uid": "10c2febcb3a7a5b54babfd9b4dcf6119",
+      "username": "jgcrossman2"
+    },
+    "merkle_root": {
+      "ctime": 1587245438,
+      "hash": "8e3a2252bdacfcd40241ceb71b677e50b33e0aab3bd61f0a13f2184aad492bc202e71e823515372a8afa4bea17ac4d86ff9610b094e5fc8aaeef57ca4cc053a2",
+      "hash_meta": "4b03cdfa00671cb1af3ce134ba997a8d1491fa623016dd7d5550e6cd7f201520",
+      "seqno": 15971886
+    },
+    "service": {
+      "entropy": "yYqQ9ayobVNVCKftXJO7ocrE",
+      "hostname": "johngcrossman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.0"
+  },
+  "ctime": 1587245481,
+  "expire_in": 504576000,
+  "prev": "0aa339a30cbd65e53f6bdefe34ab29053ee3fb32c3f50563977e1c343868bd35",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDZKTUkfDJ5rogtW0UyDmb/J1XFdsDUqPZjtVXWBm1bEKp3BheWxvYWTESpcCMMQgCqM5owy9ZeU/a97+NKspBT7j+zLD9QVjl34cNDhovTXEIA69a53uV1eFJPAfdgL36+I2SFtDER8z2xEL2VNrK8aVAgHCo3NpZ8RAzmSQuyt5n7aJiHw9UJvPhXYQpUQOQ4+Go9pBFgZ2/Dn8NU0YyYTzbZa9x+wVPtY1kebtKpymHxtBbOdfOez/D6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPx8/gAtuZW6kvu64r/ouOg8PFzv9yfDpypYW1Ih0iPQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jgcrossman2
