@@ -7,8 +7,9 @@ body {
     height: 30em;
 }
 .john {
-    width: 15em;
-    height: 15em;
+    width: 10em;
+    height: 10em;
+    float: left;
     background: url('../image/JGCpic.jpg');
     background-size: cover;
     display: block;
@@ -16,4 +17,8 @@ body {
     border-radius: 7.5em;
     -webkit-border-radius: 7.5em;
     -moz-border-radius: 7.5em;
+    margin: 1em;
+  }
+  .nameFront {
+      font-size: xx-large;
   }
