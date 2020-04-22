@@ -26,7 +26,7 @@ body {
 .navbar {
     padding: 1em;
     width: 20em;
-    height: 40em;
+    height: 300em;
     float: left;
 }
 .navbar ul{
@@ -46,5 +46,5 @@ li:hover {
     font-size: x-large;
 }
 .contentBox {
-
+    padding: 1em;
 }
