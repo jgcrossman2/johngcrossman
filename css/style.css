@@ -18,8 +18,33 @@ body {
     -webkit-border-radius: 7.5em;
     -moz-border-radius: 7.5em;
     margin: 1em;
-  }
-  .nameFront {
-      font-size: xx-large;
-      padding-top: 2em;
-  }
+}
+.nameFront {
+    font-size: xx-large;
+    padding-top: 2em;
+}
+.navbar {
+    padding: 1em;
+    width: 20em;
+    height: 40em;
+    float: left;
+}
+.navbar ul{
+    /*Remove all spacings from the list items*/
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    list-style-type: none;
+    display: inline;
+}
+.navbar li {
+    font-size: large;
+    padding-bottom: 1em;
+}
+li:hover {
+    color: greenyellow;
+    font-size: x-large;
+}
+.contentBox {
+
+}
