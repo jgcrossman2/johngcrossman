@@ -48,3 +48,24 @@ li:hover {
 .contentBox {
     padding: 1em;
 }
+#fluxfinancial {
+    display: block;
+}
+#fintechblockchain {
+    display: none;
+}
+#asianinsto {
+    display: none;
+}
+#USretail {
+    display: none;
+}
+#education {
+    display: none;
+}
+#licenses {
+    display: none;
+}
+#skills {
+    display: none;
+}
