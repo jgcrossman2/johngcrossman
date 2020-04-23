@@ -48,6 +48,12 @@ li:hover {
 .contentBox {
     padding: 1em;
 }
+h2 {
+    color: skyblue;
+}
+h3 {
+    color: lightgreen;
+}
 #fluxfinancial {
     display: block;
 }
