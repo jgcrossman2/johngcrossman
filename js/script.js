@@ -5,6 +5,7 @@ var sectionFour = document.getElementById('USretail');
 var sectionFive = document.getElementById('education');
 var sectionSix = document.getElementById('licenses');
 var sectionSeven = document.getElementById('skills');
+var sectionEight = document.getElementById('medium');
 var button1 = document.getElementById('b1');
 var button2 = document.getElementById('b2');
 var button3 = document.getElementById('b3');
@@ -12,6 +13,7 @@ var button4 = document.getElementById('b4');
 var button5 = document.getElementById('b5');
 var button6 = document.getElementById('b6');
 var button7 = document.getElementById('b7');
+var button8 = document.getElementById('b8');
 button1.addEventListener('click', function() {
     sectionOne.style.display = 'block';
     sectionTwo.style.display = 'none';
@@ -20,6 +22,7 @@ button1.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button2.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -29,6 +32,7 @@ button2.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button3.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -38,6 +42,7 @@ button3.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button4.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -47,6 +52,7 @@ button4.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button5.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -56,6 +62,7 @@ button5.addEventListener('click', function() {
     sectionFive.style.display = 'block';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button6.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -65,6 +72,7 @@ button6.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'block';
     sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'none';
 });
 button7.addEventListener('click', function() {
     sectionOne.style.display = 'none';
@@ -74,4 +82,15 @@ button7.addEventListener('click', function() {
     sectionFive.style.display = 'none';
     sectionSix.style.display = 'none';
     sectionSeven.style.display = 'block';
+    sectionEight.style.display = 'none';
+});
+button8.addEventListener('click', function() {
+    sectionOne.style.display = 'none';
+    sectionTwo.style.display = 'none';
+    sectionThree.style.display = 'none';
+    sectionFour.style.display = 'none';
+    sectionFive.style.display = 'none';
+    sectionSix.style.display = 'none';
+    sectionSeven.style.display = 'none';
+    sectionEight.style.display = 'block';
 });
