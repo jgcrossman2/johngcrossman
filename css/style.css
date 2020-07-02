@@ -5,6 +5,9 @@ body {
 .facebox {
     width: 100%;
     height: 12em;
+    position: fixed;
+    float: left;
+    background: rgba(32, 34, 38, 0.9);
 }
 .john {
     width: 10em;
@@ -21,13 +24,22 @@ body {
 }
 .nameFront {
     font-size: xx-large;
-    padding-top: 2em;
+    padding-top: 1em;
+}
+.spacer {
+    content: '';
+    width: 100%;
+    position: fixed;
+    float: left;
+    height: 12em;
 }
 .navbar {
+    margin-top: 12em;
     padding: 1em;
     width: 20em;
     height: 300em;
     float: left;
+    position: fixed;
 }
 .navbar ul{
     /*Remove all spacings from the list items*/
@@ -47,13 +59,15 @@ li:hover {
 }
 .contentBox {
     padding: 1em;
+    margin-top: 12em;
+    margin-left: 21em;
 }
-h2 {
+/*h2 {
     color: skyblue;
 }
 h3 {
     color: lightgreen;
-}
+}*/
 a {
     color: white;
 }
