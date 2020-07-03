@@ -95,6 +95,6 @@ a {
 #medium {
     display: none;
 }
-h2, h3, p {
+.cvitem {
     background: rgba(32, 34, 38, 0.9); 
 }
