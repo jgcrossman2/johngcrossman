@@ -26,6 +26,11 @@ body {
     font-size: xx-large;
     padding-top: 1em;
 }
+.tagline {
+    position: absolute;
+    left: 600px;
+    top: 110px
+}
 .spacer {
     content: '';
     width: 100%;
