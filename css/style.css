@@ -1,5 +1,5 @@
 body {
-    background-image: url(../image/navypinstripe.jpg);
+    background-image: url(../image/bluepinstripe.jpg);
     color: #fff;
 }
 .facebox {
@@ -102,4 +102,5 @@ a {
 }
 .cvitem {
     background: rgba(32, 34, 38, 0.8); 
+    padding: 10px;
 }
