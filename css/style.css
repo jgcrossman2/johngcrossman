@@ -1,5 +1,6 @@
 body {
-    background-image: url(../image/bluepinstripe.jpg);
+    /* background-image: url(../image/bluepinstripe.jpg); */
+    background-color: #42435F;
     color: #fff;
 }
 .facebox {
