@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan's Chia Auction</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="bidbox">
+            <h2>Bid For Ryan's Chia Shares</h2>
+            <div>
+                <label for="price">Bid Price</label>
+                <input type="number" name="price" id="price" min="8.60" max="8.80" step="0.05" value="8.60">
+                <label for="shares">Shares</label>
+                <input type="number" name="shares" id="shares" min="100" max="650000" step="100" value="10000">
+                <button onclick="updateChart()" id="bidbutton">Place Bid</button>
+            </div>
+        </div>
+        <div class="sharesbidbox">
+            <table>
+                <tr>
+                    <th colspan="2">Running Results</th>
+                </tr><tr>
+                    <td>Shares Bid</td><td id="sharesbid">650000</td>
+                </tr><tr>
+                    <td>Clearing Price</td><td id="clearprice">8.59</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+    
+</html>

@@ -1,0 +1,12 @@
+.chart {
+    width: 500px;
+}
+
+.sharesbidbox {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 250px;
+    border-style: solid;
+}
