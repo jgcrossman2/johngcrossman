@@ -95,3 +95,8 @@ hr {
 #fluxcard {
   display: none;
 }
+
+#scenarios {
+  display: none;
+  justify-content: space-evenly;
+}

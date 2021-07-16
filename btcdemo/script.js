@@ -164,9 +164,81 @@ function goToFluxCard() {
   let startBox = document.getElementById('setUsage');
   let barcodeBox = document.getElementById('barcodeBox');
   let addBtcBox = document.getElementById('addBTC');
+  let scenariosBox = document.getElementById('scenarios');
   gaugeBox.style.display = 'block';
   startBox.style.display = 'none';
   barcodeBox.style.display = 'none';
   addBtcBox.style.display = 'none';
+  scenariosBox.style.display = 'flex';
   spendboxVisibility();
+}
+
+function btcUp5() {
+  const margin = 0.75;
+  const usdbtc = parseInt(document.getElementById('usdbtc').value);
+  const Row1 = document.getElementById('row1');
+  const Row2 = document.getElementById('row2');
+  const Row3 = document.getElementById('row3');
+  const Row4 = document.getElementById('row4');
+  const Row5 = document.getElementById('row5');
+  const Cell1 = Row1.getElementsByTagName('td');
+  const Cell2 = Row2.getElementsByTagName('td');
+  const Cell3 = Row3.getElementsByTagName('td');
+  const Cell4 = Row4.getElementsByTagName('td');
+  const Cell5 = Row5.getElementsByTagName('td');
+  let stakedamt = Cell1[1].innerText;
+  let collateralamt = Cell2[1].innerText;
+  let drawdownamt = Cell3[1].innerText;
+  let availableamt = Cell4[1].innerText;
+  let percentamt = Cell5[1].innerText;
+  let newusdbtc = usdbtc * 1.05;
+  let newstakedamount = parseFloat(stakedamt);
+  let collateral = newstakedamount * newusdbtc;
+  let grossavailable = collateral * margin;
+  let drawdown = parseFloat(drawdownamt);
+  let available = grossavailable - drawdown;
+  let percent = drawdown / collateral;
+  document.getElementById('stakedamt').innerHTML = newstakedamount.toFixed(4);
+  document.getElementById('collateralamt').innerHTML = collateral.toFixed(2);
+  document.getElementById('drawdownamt').innerHTML = drawdown.toFixed(2);
+  document.getElementById('availableamt').innerHTML = available.toFixed(2);
+  document.getElementById('percentamt').innerHTML = (percent * 100).toFixed(2);
+  document.getElementById('usdbtc').value = newusdbtc;
+  spendboxVisibility();
+  updateChart();
+}
+
+function btcDown5() {
+  const margin = 0.75;
+  const usdbtc = parseInt(document.getElementById('usdbtc').value);
+  const Row1 = document.getElementById('row1');
+  const Row2 = document.getElementById('row2');
+  const Row3 = document.getElementById('row3');
+  const Row4 = document.getElementById('row4');
+  const Row5 = document.getElementById('row5');
+  const Cell1 = Row1.getElementsByTagName('td');
+  const Cell2 = Row2.getElementsByTagName('td');
+  const Cell3 = Row3.getElementsByTagName('td');
+  const Cell4 = Row4.getElementsByTagName('td');
+  const Cell5 = Row5.getElementsByTagName('td');
+  let stakedamt = Cell1[1].innerText;
+  let collateralamt = Cell2[1].innerText;
+  let drawdownamt = Cell3[1].innerText;
+  let availableamt = Cell4[1].innerText;
+  let percentamt = Cell5[1].innerText;
+  let newusdbtc = usdbtc * 0.95;
+  let newstakedamount = parseFloat(stakedamt);
+  let collateral = newstakedamount * newusdbtc;
+  let grossavailable = collateral * margin;
+  let drawdown = parseFloat(drawdownamt);
+  let available = grossavailable - drawdown;
+  let percent = drawdown / collateral;
+  document.getElementById('stakedamt').innerHTML = newstakedamount.toFixed(4);
+  document.getElementById('collateralamt').innerHTML = collateral.toFixed(2);
+  document.getElementById('drawdownamt').innerHTML = drawdown.toFixed(2);
+  document.getElementById('availableamt').innerHTML = available.toFixed(2);
+  document.getElementById('percentamt').innerHTML = (percent * 100).toFixed(2);
+  document.getElementById('usdbtc').value = newusdbtc;
+  spendboxVisibility();
+  updateChart();
 }
