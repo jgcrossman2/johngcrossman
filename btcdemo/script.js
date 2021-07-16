@@ -156,6 +156,7 @@ function spendboxVisibility() {
     spendmoneyBox.style.display = 'block';
   } else {
     spendmoneyBox.style.display = 'none';
+    alert('You have exceeded your credit limit. Your account is closed.')
   }
 }
 
