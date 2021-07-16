@@ -242,3 +242,30 @@ function btcDown5() {
   spendboxVisibility();
   updateChart();
 }
+
+function add1Month() {
+  let Row2 = document.getElementById('row2');
+  let Row3 = document.getElementById('row3');
+  let Row4 = document.getElementById('row4');
+  //let Row5 = document.getElementById('row5');
+  let Row6 = document.getElementById('row6');
+  let Cell2 = Row2.getElementsByTagName('td');
+  let Cell3 = Row3.getElementsByTagName('td');
+  let Cell4 = Row4.getElementsByTagName('td');
+  //let Cell5 = Row5.getElementsByTagName('td');
+  let Cell6 = Row6.getElementsByTagName('td');
+  let interestrate = parseFloat(Cell6[1].innerText);
+  let monthinterest = 1 + (interestrate/1200);
+  let prevcollateral = Cell2[1].innerText;
+  let prevdrawdown = Cell3[1].innerText;
+  let prevavailable = Cell4[1].innerText;
+  let newdrawdown = parseFloat(prevdrawdown) * monthinterest;
+  let spendamt = parseFloat(prevdrawdown) * (monthinterest - 1);
+  let newavailable = prevavailable - spendamt;
+  let newpercent = newdrawdown / parseFloat(prevcollateral);
+  document.getElementById('drawdownamt').innerHTML = newdrawdown.toFixed(2);
+  document.getElementById('availableamt').innerHTML = newavailable.toFixed(2);
+  document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
+  spendboxVisibility();
+  updateChart();
+}
