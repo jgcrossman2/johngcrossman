@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Bitcoin Line of Credit Start</title>
+</head>
+<body>
+    <div class="container">
+        <input type="hidden" id="usdbtc" value="35000">
+        <div class="logobox"><img src="images/Logo.svg"></div>
+        <hr>
+        <div id="gauge">
+            <div id="gaugeTitle">Line of Credit Usage</div>
+            <canvas id="myChart"></canvas>
+            <div id="gaugeReadout">0%</div>
+        </div>
+        <div id="setUsage">
+            <button id="nextStepButton" onclick="goToWallet()">Click Here or Wallet Icon for Next Step</button>
+        </div>
+        <div id="barcodeBox">
+            <div class="bartitle">Scan to Add BTC (dummy QR for now)</div>
+            <img id='barcode' 
+            src="https://api.qrserver.com/v1/create-qr-code/?data=32mh4uzo1LqLXd1yozdiY146dpTNOTREALsoDontBeADummy" 
+            alt="" 
+            title="HELLO" 
+            width="250" 
+            height="250" />
+        </div>
+        <div id="addBTC">
+            <label for="addcrypto">BTC</label>
+            <input type="number" name="addcrypto" id="addcrypto" min="0" max="100" value="10">
+            <button onclick="addBtc()" id="addButton">Stake Bitcoin</button>
+        </div>
+        <hr/>
+        <div class="statistics">
+            <table>
+                <tr id="row1">
+                    <td>Staked:</td><td id="stakedamt" class="statnum">0.0000</td><td class="stattype">BTC</td>
+                </tr>
+                <tr id="row2">
+                    <td>Collateral</td><td id="collateralamt" class="statnum">0.00</td><td class="stattype">USD</td>
+                </tr>
+                <tr id="row3">
+                    <td>Drawdown</td><td id="drawdownamt" class="statnum">0.00</td><td class="stattype">USD</td>
+                </tr>
+                <tr id="row4">
+                    <td>Available:</td><td id="availableamt" class="statnum">0.00</td><td class="stattype">USD</td>
+                </tr>
+                <tr id="row5">
+                    <td>Percent Used:</td><td id="percentamt" class="statnum">0.00</td><td class="stattype">%</td>
+                </tr>
+                <tr id="row6">
+                    <td>Interest Rate:</td><td id="intrateamt" class="statnum">4.75</td><td class="stattype">%</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="spendMoney">
+            <label for="spending">US Dollars</label>
+            <input type="number" name="spending" id="spending" min="0" value="10" step="0.01">
+            <button onclick="updateSpend()" id="updateButton">Spend Now</button>
+        </div>
+        <hr>
+        <div class="bottombar">
+            <div id="wallet" onclick="goToWallet()"><img src="images/WalletButton.png" alt=""></div>
+            <div id="fluxcard" onclick="goToFluxCard()"><img src="images/FluxCard.png" alt=""></div>
+            <div id="security"><img src="images/SecurityButton.png" alt=""></div>
+            <div id="settings"><img src="images/SettingsButton.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
