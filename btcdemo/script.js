@@ -37,7 +37,13 @@ function updateChart() {
   myChart.update();
 };
 
-
+function maxSpend() {
+  const Row4 = document.getElementById('row4');
+  const Cell4 = Row4.getElementsByTagName('td');
+  const spendBox = document.getElementById('spending');
+  let availableamt = parseFloat(Cell4[1].innerText);
+  spendBox.setAttribute('max', availableamt);
+}
 
 //function collectStats() {
 //  const usdbtc = parseInt(document.getElementById('usdbtc').value);
@@ -100,7 +106,8 @@ function addBtc() {
   document.getElementById('drawdownamt').innerHTML = newdrawdownamt.toFixed(2);
   document.getElementById('availableamt').innerHTML = newavailableamt.toFixed(2);
   document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
-  updateChart()
+  updateChart();
+  maxSpend();
 };
 
 function updateSpend() {
@@ -125,6 +132,7 @@ function updateSpend() {
   document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
   spendboxVisibility();
   updateChart();
+  maxSpend();
 };
 
 // function printIt() {
@@ -207,6 +215,7 @@ function btcUp5() {
   document.getElementById('usdbtc').value = newusdbtc;
   spendboxVisibility();
   updateChart();
+  maxSpend();
 }
 
 function btcDown5() {
@@ -242,6 +251,7 @@ function btcDown5() {
   document.getElementById('usdbtc').value = newusdbtc;
   spendboxVisibility();
   updateChart();
+  maxSpend();
 }
 
 function add1Month() {
@@ -269,4 +279,5 @@ function add1Month() {
   document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
   spendboxVisibility();
   updateChart();
+  maxSpend();
 }
