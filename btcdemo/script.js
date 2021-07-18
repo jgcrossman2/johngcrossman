@@ -132,6 +132,7 @@ function updateSpend() {
   document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
   spendboxVisibility();
   updateChart();
+  marginWarning();
   maxSpend();
 };
 
@@ -165,6 +166,15 @@ function spendboxVisibility() {
   } else {
     spendmoneyBox.style.display = 'none';
     alert('You have exceeded your credit limit. Your account is closed.')
+  }
+}
+
+function marginWarning() {
+  const Row5 = document.getElementById('row5');
+  let Cell5 = Row5.getElementsByTagName('td');
+  let utilization = parseFloat(Cell5[1].innerText);
+  if (utilization >= 50 && utilization < 75) {
+    alert('Credit Utilization is high. You should stake more Bitcoin with the Wallet button below.')
   }
 }
 
@@ -215,6 +225,7 @@ function btcUp5() {
   document.getElementById('usdbtc').value = newusdbtc;
   spendboxVisibility();
   updateChart();
+  marginWarning();
   maxSpend();
 }
 
@@ -251,6 +262,7 @@ function btcDown5() {
   document.getElementById('usdbtc').value = newusdbtc;
   spendboxVisibility();
   updateChart();
+  marginWarning();
   maxSpend();
 }
 
@@ -279,5 +291,6 @@ function add1Month() {
   document.getElementById('percentamt').innerHTML = (newpercent * 100).toFixed(2);
   spendboxVisibility();
   updateChart();
+  marginWarning();
   maxSpend();
 }
