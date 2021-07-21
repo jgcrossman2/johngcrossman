@@ -93,7 +93,7 @@ function addBtc() {
   let drawdownamt = Cell3[1].innerText;
   let availableamt = Cell4[1].innerText;
   let percentamt = Cell5[1].innerText;
-  let newbtc = parseInt(addbtc);
+  let newbtc = parseFloat(addbtc);
   let collateral = newbtc * usdbtc;
   let available = collateral * margin;
   let newstakedamount = parseFloat(stakedamt) + newbtc;
