@@ -1,4 +1,4 @@
-var sectionOne = document.getElementById('fluxfinancial');
+var sectionOne = document.getElementById('vexcapital');
 var sectionTwo = document.getElementById('fintechblockchain');
 var sectionThree = document.getElementById('asianinsto');
 var sectionFour = document.getElementById('USretail');
